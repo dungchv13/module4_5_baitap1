@@ -11,8 +11,17 @@ public class Comment {
     private int ratting;
     private String author;
     private String feedBack;
+    private int like = 0;
 
     public Comment() {
+    }
+
+    public int getLike() {
+        return like;
+    }
+
+    public void setLike(int like) {
+        this.like = like;
     }
 
     public Comment(int ratting, String author, String feedBack) {

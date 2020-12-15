@@ -15,11 +15,11 @@
             </td>
             <td>
                 <select th:field="*{ratting}" class="custom-select">
-                    <option th:value="5" th:text="soawesome">so awesome</option>
-                    <option th:value="4" th:text="great">great</option>
-                    <option th:value="3" th:text="soso ">so so</option>
-                    <option th:value="2" th:text="nogood">no good</option>
-                    <option th:value="1" th:text="Bad">Bad</option>
+                    <option th:value="5" th:text="'+5'"></option>
+                    <option th:value="4" th:text="'+4'"></option>
+                    <option th:value="3" th:text="'+3'"></option>
+                    <option th:value="2" th:text="'+2'"></option>
+                    <option th:value="1" th:text="'+1'"></option>
                 </select>
             </td>
         </tr>
@@ -40,7 +40,9 @@
             </td>
         </tr>
         <tr>
-            <td></td>
+            <td>
+<!--                <input type="hidden" th:field="*{like}" value="0">-->
+            </td>
             <td>
                 <button type="submit" class="btn btn-primary">SUBMIT</button>
 
